@@ -12,13 +12,14 @@ Attiny85 has an internal temperature sensor, which measures the chip temperature
     - For all other digits the number of normal blinks corresponds to the
       digit displayed.  
   
-  The led should not be connected directly to the GPIO pin, but through a transistor with 1Mohm
-  resistor in the base circuit.  This minimizes the power drawn through the chip, to avoid
-  heating it above the ambient temperature, thus achieving better accuracy.  
+  
+The led should not be connected directly to the GPIO pin, but through a transistor with 1Mohm
+resistor in the base circuit.  This minimizes the power drawn through the chip, to avoid
+heating it above the ambient temperature, thus achieving better accuracy.  
 
-  I used an A42 NPN transistor for driving the LED with 220Ohm resistor in the collector circuit.
-  This is not the best choice - for a brighter LED a transistor with higher hFE should be used.
+I used an A42 NPN transistor for driving the LED with 220Ohm resistor in the collector circuit.
+This is not the best choice - for a brighter LED a transistor with higher hFE should be used.
 
-  Notes: This works well with Vcc around 3.3V.  The compensation formula most likely needs correction,
-  in order to make the reading independent of the power supply voltage, so no volage regulator 
-  would be needed.  
+Notes: This works well with Vcc around 3.3V.  The compensation formula most likely needs correction,
+in order to make the reading independent of the power supply voltage, so no volage regulator 
+would be needed.  
